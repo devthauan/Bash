@@ -1,0 +1,67 @@
+vi commands:
+	i to insert values in vi
+	esc to scape from text
+	:wq to save and quit
+
+terminal commands:
+	pwd == show current path (print working directory)
+	cd == change directory
+	touch file_name == creates files
+	ls -l == list -long listing format
+	mkdir folder_name == creates folders
+	history -c == clear the history of commands in the terminal
+	cat file_name == print content from file in the terminal
+
+bash commands and information:
+	#!/bin/bash == interpreter path
+	echo == print
+	. == current path
+	VARIABLE="Valor"  == variable must be uppercase and not have space around the "="
+	echo "text ${VARIABLE}" == to print variables
+	read VARIABLE ==  reads the user input in the VARIABLE
+	VARIABLE=$1 ==  receives the first argument passed to the script $2 the second and so on
+	DATA=$(date +%d-%m-%y) == command substitution (it's "$()" and not "${}")
+	$# == print the number of arguments passed to the script
+	$@ == list all arguments passed to the script
+	hostname == name of the system
+	uname -r == kernel release (-r release)
+	uname -m == print the machine hardware name (-m machine)
+	lsblk == list of blocks available
+	df -h == disk space usage (-h human output)
+	$0 = script name (positional arguments)
+	$1 = first argument passed to the script
+	comand_1 && comand_2 == (and operator) executes comand_1 and comand_2
+	comand_1 || comand_2 == (or operator) executes comand_1 if true, else executes comand_2
+	readonly VARIABLE="value" == creates constants
+
+	""" if structure
+	if [[ condition -ge ]]
+	then
+		echo "something"
+	elif [[ another condition ]]
+	then
+		echo "another something"
+	else
+		echo "final something"
+	fi
+	"""
+
+	""" for structure
+	for i in 1 2 3
+	do
+		echo "something"
+	done
+	"""
+	
+	"""while structure
+	COUNTER=1
+	while [[ condition with COUNTER ]]
+	do
+		echo "something"
+		((COUNTER++))
+	done
+	"""
+
+Usefull links:
+	https://tldp.org/LDP/abs/html/comparison-ops.html
+	https://tldp.org/LDP/abs/html/
